@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.gestionhospitalaria.viewController.ViewController">
+   <children>
+      <Pane fx:id="citas" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="249.0" layoutY="6.0" text="Citas">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fechaCita" layoutX="39.0" layoutY="67.0" prefHeight="25.0" prefWidth="235.0" />
+            <Label layoutX="39.0" layoutY="100.0" text="Hora:" />
+            <Label layoutX="39.0" layoutY="50.0" text="Fecha:" />
+            <Label layoutX="39.0" layoutY="153.0" text="Asunto:" />
+            <TextField fx:id="horaCita" layoutX="39.0" layoutY="117.0" prefHeight="25.0" prefWidth="235.0" />
+            <TextField fx:id="asuntoCita" layoutX="39.0" layoutY="170.0" prefHeight="25.0" prefWidth="235.0" />
+            <Button fx:id="agregarCita" layoutX="37.0" layoutY="201.0" mnemonicParsing="false" text="Agregar" />
+            <Button fx:id="eliminarCita" layoutX="123.0" layoutY="201.0" mnemonicParsing="false" text="Eliminar" />
+            <TableView fx:id="tablaCita" editable="true" layoutX="365.0" layoutY="56.0" prefHeight="173.0" prefWidth="153.0">
+               <columns>
+                  <TableColumn fx:id="fecha" prefWidth="75.0" text="Fecha" />
+                  <TableColumn fx:id="hora" prefWidth="75.0" text="Hora" />
+               </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+            <Button fx:id="actualizarCita" layoutX="206.0" layoutY="201.0" mnemonicParsing="false" text="Actualizar" />
+         </children>
+      </Pane>
+      <Pane id="PaneDoctor.id" fx:id="doctor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="249.0" layoutY="6.0" text="Doctor">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cedulaDoctor" layoutX="39.0" layoutY="67.0" prefHeight="25.0" prefWidth="235.0" />
+            <Label layoutX="39.0" layoutY="100.0" text="Nombre:" />
+            <Label layoutX="39.0" layoutY="50.0" text="Cedula:" />
+            <Label layoutX="39.0" layoutY="153.0" text="Edad:" />
+            <TextField fx:id="nombreDoctor" layoutX="39.0" layoutY="117.0" prefHeight="25.0" prefWidth="235.0" />
+            <TextField fx:id="edadDoctor" layoutX="39.0" layoutY="170.0" prefHeight="25.0" prefWidth="235.0" />
+            <Button fx:id="agregarDoctor" layoutX="37.0" layoutY="201.0" mnemonicParsing="false" text="Agregar" />
+            <Button fx:id="eliminarDoctor" layoutX="123.0" layoutY="201.0" mnemonicParsing="false" text="Eliminar" />
+            <TableView fx:id="tablaDoctor" editable="true" layoutX="335.0" layoutY="56.0" prefHeight="173.0" prefWidth="226.0">
+              <columns>
+                <TableColumn fx:id="ceduladoctor" prefWidth="75.0" text="Cedula" />
+                <TableColumn fx:id="nombredoctor" prefWidth="75.0" text="Nombre" />
+                 <TableColumn fx:id="edaddoctor" prefWidth="75.0" text="Edad" />
+              </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+            <Button fx:id="actualizarDoctor" layoutX="206.0" layoutY="201.0" mnemonicParsing="false" text="Actualizar" />
+         </children>
+      </Pane>
+      <Pane id="PanePaciente.id" fx:id="paciente" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="249.0" layoutY="6.0" text="Paciente">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cedulaPaciente" layoutX="39.0" layoutY="67.0" prefHeight="25.0" prefWidth="235.0" />
+            <Label layoutX="39.0" layoutY="100.0" text="Nombre:" />
+            <Label layoutX="39.0" layoutY="50.0" text="Cedula:" />
+            <Label layoutX="39.0" layoutY="153.0" text="Edad:" />
+            <TextField fx:id="nombrePaciente" layoutX="39.0" layoutY="117.0" prefHeight="25.0" prefWidth="235.0" />
+            <TextField fx:id="edadPaciente" layoutX="39.0" layoutY="170.0" prefHeight="25.0" prefWidth="235.0" />
+            <Button fx:id="agregarPaciente" layoutX="37.0" layoutY="201.0" mnemonicParsing="false" text="Agregar" />
+            <Button fx:id="eliminarPaciente" layoutX="123.0" layoutY="201.0" mnemonicParsing="false" text="Eliminar" />
+            <TableView id="TableViewPacientes.id" fx:id="tablaPaciente" editable="true" layoutX="335.0" layoutY="56.0" prefHeight="173.0" prefWidth="226.0">
+               <columns>
+                  <TableColumn fx:id="cedulapaciente" prefWidth="75.0" text="Cedula" />
+                  <TableColumn fx:id="nombrepaciente" prefWidth="75.0" text="Nombre" />
+                  <TableColumn fx:id="edadpaciente" prefWidth="75.0" text="Edad" />
+               </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+            <TableView id="TableViewPalindromos.id" fx:id="tablaPalindromos" editable="true" layoutX="335.0" layoutY="56.0" prefHeight="173.0" prefWidth="226.0">
+               <columns>
+                  <TableColumn fx:id="cedulaPalindromos" prefWidth="75.0" text="Cedula" />
+                  <TableColumn fx:id="nombrePalindromos" prefWidth="75.0" text="Nombre" />
+                  <TableColumn fx:id="edadPalindromos" prefWidth="75.0" text="Edad" />
+               </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+            <Button fx:id="actualizarPaciente" layoutX="206.0" layoutY="201.0" mnemonicParsing="false" text="Actualizar" />
+            <Button fx:id="palindromos" layoutX="350.0" layoutY="238.0" mnemonicParsing="false" text="Palindromos" />
+            <Button fx:id="vocales" layoutX="475.0" layoutY="238.0" mnemonicParsing="false" text="Vocales" />
+            <TableView id="TableViewVocales.id" fx:id="tablaVocales" layoutX="335.0" layoutY="56.0" prefHeight="173.0" prefWidth="226.0">
+               <columns>
+                  <TableColumn fx:id="cedulaVocales" prefWidth="75.0" text="Cedula" />
+                  <TableColumn fx:id="nombreVocales" prefWidth="75.0" text="Nombre" />
+                  <TableColumn fx:id="edadVocales" prefWidth="75.0" text="Edad" />
+               </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+         </children>
+      </Pane>
+      <Button fx:id="accesoPaciente" layoutX="57.0" layoutY="348.0" mnemonicParsing="false" text="Interfaz Paciente" />
+      <Button fx:id="accesoDoctor" layoutX="460.0" layoutY="348.0" mnemonicParsing="false" text="Interfaz Doctor" />
+      <Button fx:id="accesoCita" layoutX="256.0" layoutY="348.0" mnemonicParsing="false" text="Interfaz Cita" />
+      <Label fx:id="LabelTitulo" layoutX="158.0" layoutY="123.0" text="Gestion Hospitalaria" textAlignment="JUSTIFY" textFill="#0daed7">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
