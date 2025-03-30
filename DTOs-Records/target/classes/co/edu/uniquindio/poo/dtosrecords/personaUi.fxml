@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.uniquindio.poo.dtosrecords.controllers.PersonaController">
+
+    <Label text="Registro de Persona"/>
+    <TextField fx:id="nombreField" promptText="Nombre"/>
+    <TextField fx:id="edadField" promptText="Edad"/>
+    <Button text="Registrar" onAction="#registrarPersona"/>
+    <Label fx:id="resultadoLabel"/>
+</VBox>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.uniquindio.poo.dtosrecords.controllers.ProductoController">
+
+    <Label text="Registro de Producto"/>
+    <TextField fx:id="nombreField" promptText="Nombre del Producto"/>
+    <TextField fx:id="precioField" promptText="Precio"/>
+    <Button text="Registrar" onAction="#registrarProducto"/>
+    <Label fx:id="resultadoLabel"/>
+</VBox>
